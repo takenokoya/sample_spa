@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='index.css'>
+        <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+    </head>
+    <body>
+        <div id='app'>
+            <button :disabled='button_disabled' @click='log'>
+                {{ button_label }}
+            </button>
+            <button :disabled='button_disabled'>
+                {{ button_label }}
+            </button>
+        </div>
+        <script src='./index.js'></script>
+    </body>
+</html>
