@@ -5,12 +5,7 @@
     </head>
     <body>
         <div id='app'>
-            <button :disabled='button_disabled' @click='log'>
-                {{ button_label }}
-            </button>
-            <button :disabled='button_disabled'>
-                {{ button_label }}
-            </button>
+            <button @click='clickLog' @mouseenter='hoverLog'>ログ</button>
         </div>
         <script src='./index.js'></script>
     </body>
