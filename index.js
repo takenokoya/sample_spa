@@ -1,11 +1,14 @@
-Vue.component('list-title', {
+const listTitle = {
     template: `
         <h2>user list</h2>
     `
-})
+}
 
 // componentはVueインスタンスの作成前に定義しておく
 Vue.component('user-list', {
+    components: {
+        'list-title': listTitle
+    },
     // componentの値は関数の戻り値になるようにする
     data() {
         return {
