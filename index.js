@@ -2,16 +2,7 @@ const vm = new Vue({
     el: '#app',
     data() {
         return {
-            message: 'Hello, world'
-        }
-    },
-
-    methods: {
-        clickLog() {
-            console.log(this.message)
-        },
-        hoverLog() {
-            console.log('hover')
+            reserve: false
         }
     }
 })
