@@ -1,3 +1,9 @@
+Vue.component('list-title', {
+    template: `
+        <h2>user list</h2>
+    `
+})
+
 // componentはVueインスタンスの作成前に定義しておく
 Vue.component('user-list', {
     // componentの値は関数の戻り値になるようにする
@@ -13,11 +19,15 @@ Vue.component('user-list', {
         }
     },
     template: `
-        <ul>
-            <li v-for="user in users" :key="user.id">
-                {{ user.name }}
-            </li>
-        </ul>
+        <div>
+            <list-title></list-title>
+            <ul>
+                <li v-for="user in users" :key="user.id">
+                    {{ user.name }}
+                </li>
+            </ul>
+        </div>
+
     `
 })
 
